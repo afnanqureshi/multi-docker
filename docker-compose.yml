@@ -4,7 +4,7 @@ services:
     image: "cygnetops/multi-client-10-14"
     mem_limit: 128m
     hostname: client
-  server:
+  api:
     image: "cygnetops/multi-server-10-14"
     mem_limit: 128m
     hostname: api
