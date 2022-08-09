@@ -14,7 +14,7 @@ script:
   - docker build -t afnanqureshi/multi-nginx ./nginx
   - docker build -t afnanqureshi/multi-server ./server
   - docker build -t afnanqureshi/multi-worker ./worker
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_ID}" --password-stdin
   - docker push afnanqureshi/multi-client
   - docker push afnanqureshi/multi-nginx
   - docker push afnanqureshi/multi-server
